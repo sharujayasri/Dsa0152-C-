@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num;
+	int fact =0;
+	cout<<"Enter the number:";
+	cin>>num;
+	for(int i=1;i<num;i++)
+	{
+		if(num%i==0)
+		{
+		
+		fact=fact+i;
+	}
+}
+	if(fact==num)
+	{
+		cout<<"its perfect number";
+	}
+	else
+	{
+		cout<<"not a perfect number";
+	}
+}

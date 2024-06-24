@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+float calculateSI(float priciple,float time,float rate){
+	return(priciple*time*rate)/100;
+}
+int main()
+{
+	int principle,time,interest;
+	cout<<"Enter the principle:";
+	cin>>principle;
+	cout<<"Enter the years:";
+	cin>>time;
+	char citizen;
+	cout<<"Enter the citizen:";
+	cin>>citizen;
+	if(citizen=='Y'||citizen=='y')
+	{
+	interest=	calculateSI(principle,time,12.0)/100;
+	}
+	else
+	{
+	interest =	calculateSI(principle,time,10.0)/100;
+	}
+	cout<<interest;
+}

@@ -1,0 +1,22 @@
+#include<iostream>
+#include<string>
+using namespace std;
+bool isValidUsername(const string&username1,const string&username2 )
+{
+	return username1==username2;
+}
+int main()
+{
+	string  username,Enterusername;
+	cout<<"Enter the username:";
+	cin>>username;
+	cout<<"Re-Enterusername:";
+	cin>>Enterusername;
+	if(isValidUsername(username,Enterusername)){
+		cout<<"is valid";
+	}
+	else
+	{
+		cout<<"not valid";
+	}
+}

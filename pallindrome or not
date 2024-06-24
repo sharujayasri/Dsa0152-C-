@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num,rem=0,rev=0;
+	cout<<"Enter the number:";
+	cin>>num;
+	int temp=num;
+	while(num>0)
+	{
+		rem=num%10;
+		rev=rev*10+rem;
+		num=num/10;
+		
+	}
+	if(rev==temp)
+	{
+		cout<<"its pallindrome";
+	}
+	else
+	{
+		cout<<"not a pallindrome";
+	}
+}
